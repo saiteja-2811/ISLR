@@ -57,7 +57,7 @@ When might a less flexible approach be preferred?
     When we suspect that the assumptions of the less flexible method are satisfied (e.g. relationships appear linear, some variables are certainly useless -> LASSO linear regression may perform better than anything else)
     When clarification behind why an observation has a particular prediction may be necessary
 
------------------------- 5 ------------------------
+------------------------ 7 ------------------------
 KNN
     b) Green (nearest is 1.414)
     c) Red ( G - 1.414, R - 1.732 & 2)
