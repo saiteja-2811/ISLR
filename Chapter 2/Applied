@@ -1,10 +1,64 @@
-1.
-a) Flexible better than flexible because of high number of data points.
-b) Inflexible better than Flexible because of high number of predictors.
-c) Flexible better than Inflexible because of non-linearity.
-d) Inflexible better than Flexible because of high-variance.
+------------------------ 1 ------------------------
+    a) Flexible better than flexible because of high number of data points.
+    b) Inflexible better than Flexible because of high number of predictors.
+    c) Flexible better than Inflexible because of non-linearity.
+    d) Inflexible better than Flexible because of high-variance.
 
-2.
-a) Regression -- Inference -- n=500, p=3
-b) Classification -- Prediction -- n=20, p=13
-c) Regression -- Prediction -- n=52, p=3
+------------------------ 2 ------------------------
+    a) Regression -- Inference -- n=500, p=3
+    b) Classification -- Prediction -- n=20, p=13
+    c) Regression -- Prediction -- n=52, p=3
+
+------------------------ 3 ------------------------
+Bias Variance Tradeoff:
+    Variance - The amount f-hat would change when trained over a different dataset i.e. the change in the predictions when the predictors values change.
+    Bias - Error introduced by approximating a real life complex problem using a simpler model.
+
+------------------------ 4 ------------------------
+    a) Classification :
+        Loan Default - Both Inference & Prediction
+        Churn - Both Inference & Prediction
+        Image classification - Prediction
+    b) Regression :
+        TV Ratings - Inference
+        Sales - Both Inference & Prediction
+        Co2 Emissions - Inference
+    c) Clustering :
+        High- Low Value Fan Segmentation
+        Similar Customer Segments
+        House Segmentation
+
+------------------------ 5 ------------------------
+Flexible vs Non-Flexible
+
+Flexible method advantages:
+    Decreased bias (less assumptions about the functional form of f^)
+    Capture non-linear relationships
+    Capture complex variable interactions
+    Often require less assumptions
+    Often outperform less flexible methods in prediction error
+
+Flexible method disadvantages:
+    Increased variance (easier to over-fit)
+    Require tuning
+    Increased training times (cross-validation or equivalent is basically necessary to mitigate high variance & tune hyperparameters)
+    Require more variables and observations to work optimally
+    Less interpretable
+
+More flexible approach be preferred to a less flexible approach due to:
+    When the primary concern is predictive power
+    When there is sufficient computing power for variance-controlling measures (e.g. cross-validation)
+    When there is a large number of variables
+    When non-linear or interaction relationships are present
+    When there is a large amount of data
+
+When might a less flexible approach be preferred?
+    When we are more interested in interpretability/inference
+    When we suspect that the assumptions of the less flexible method are satisfied (e.g. relationships appear linear, some variables are certainly useless -> LASSO linear regression may perform better than anything else)
+    When clarification behind why an observation has a particular prediction may be necessary
+
+------------------------ 5 ------------------------
+KNN
+    b) Green (nearest is 1.414)
+    c) Red ( G - 1.414, R - 1.732 & 2)
+    d) If K increases, flexibility decreases. So to capture the non-linear relationship we need more flexibility and smaller K.
